@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tail Listing</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<!-- navigation bar -->
+
+<nav class="absolute right-0 left-0 z-10 text-white">
+    <div class="w-9/12 mx-auto py-5 flex justify-between items-center">
+        <div>
+            <a href="#" class="text-lg">Tail Listing</a>
+        </div>
+        <div class="">
+            <button class="py-2 px-4 rounded-md border border-amber-500 text-amber-500 bg-transparent hover:bg-amber-500 hover:text-white transition-all">
+                Add Listing
+            </button>            
+        </div>
+        <div class="space-x-4">
+            <button class="text-lg">Sign In</button>
+            <button class="text-lg">Sign Up</button>
+        </div>
+    </div>
+</nav>
+
+<!-- navigation bar ends-->
+
+ <!-- hero section -->
+
+ <div class="relative h-screen">
+    <img src="/src/assets/images/hero/hero_4.jpg" alt="" class="h-full w-full object-cover">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="absolute inset-0 h-full w-full">
+        <div class="flex min-h-full w-full items-center justify-center">
+           <div class="space-y-6">
+            <div class="text-white text-center mb-4">
+                <p class="text-4xl capitalize font-bold">Discover places that people love</p>
+                <p class="text-lg">We will help you to find the best places in the world </p>
+            </div>
+            <div  class="flex gap-5">
+                <div>
+                    <input type="text" placeholder="Location" class="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline">
+                </div>  
+                <div>
+                    <input type="text" placeholder="I'm Looking for ... " class="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline">
+                </div>   
+
+                <div>
+                    <button class="rounded-md py-2.5 px-6 bg-amber-500 text-lg text-white hover:bg-amber-600">
+                       <span class="material-icons align-middle">search</span>
+                         Search
+                    </button>
+               </div>
+            </div>
+            
+            <div>
+                <ul class="flex gap-5 justify-center text-sm text-white mb-5">
+    
+                    <li class="capitilize">
+                        <a href="#" class="hover:text-amber-500">
+                         <span class="material-icons align-middle hidden md:inline-flex">restaurant_menu</span>
+                         Restaurant
+                        </a>
+                     </li>
+    
+                    <li class="capitilize">
+                       <a href="#" class="hover:text-amber-500">
+                        <span class="material-icons align-middle hidden md:inline-flex">local_cafe</span>
+                        cafe
+                       </a>
+                    </li>
+    
+                    <li class="capitilize">
+                        <a href="#" class="hover:text-amber-500">
+                         <span class="material-icons align-middle hidden md:inline-flex">fitness_center</span>
+                         gym
+                        </a>
+                     </li>
+    
+                     <li class="capitilize">
+                        <a href="#" class="hover:text-amber-500">
+                         <span class="material-icons align-middle hidden md:inline-flex">medication</span>
+                         Hospital
+                        </a>
+                     </li>
+    
+                     <li class="capitilize">
+                        <a href="#" class="hover:text-amber-500">
+                         <span class="material-icons align-middle hidden md:inline-flex">school</span>
+                         School
+                        </a>
+                     </li>
+    
+                     <li class="capitilize">
+                        <a href="#" class="hover:text-amber-500">
+                         <span class="material-icons align-middle hidden md:inline-flex">shopping_cart</span>
+                         Shopping
+                        </a>
+                     </li>
+                </ul>  
+            </div>
+        </div>
+    </div>
+        
+    </div>
+</div>
+<!-- hero section -->
+
+<!-- Body Section -->
+<div>
+    <div class="bg-gray-50 py-12">
+        <div class="w-9/12 mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-4xl font-bold text-gray-600 mb-3">Popular Places</p>
+                <p class="text-gray-600">Discover Most Searched Places</p>
+            </div>
+            <div>
+                <div class="grid grid-cols-3 gap-6 mx-auto">
+                    <!-- card one -->
+                    <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="./src/assets/images/skynews-dentist-generic_5393494.jpg" alt="" srcset="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <!-- stars -->
+                            <div class="flex items-center text-sm">
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-60">294 reviews</span>
+                            </div>
+                                <p class="text-lg font-bold text-gray-600">
+                                    Dr. Someone Clinic
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Somewhere, California
+                                </p>
+
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">$$</span>
+                                </div>
+                        </div>
+                    </div>
+
+                      <!-- card two -->
+                      <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="./src/assets/images/81782419-mobile-phone-repair-at-service-center-smartphone-dissasembling-and-diagnostic-repairman-workplace-to.jpg" alt="" srcset="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <!-- stars -->
+                            <div class="flex items-center text-sm">
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-60">294 reviews</span>
+                            </div>
+                                <p class="text-lg font-bold text-gray-600">
+                                    Zee Mobile Repair
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Somewhere, California
+                                </p>
+
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">$$</span>
+                                </div>
+                        </div>
+                    </div>
+
+                      <!-- card three -->
+                      <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="./src/assets/images/247885282_428899745318874_4537354239597400518_n.jpg" alt="" srcset="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2 relative">
+                            <!-- stars -->
+                            <div class="flex items-center text-sm">
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-60">294 reviews</span>
+                            </div>
+                                <p class="text-lg font-bold text-gray-600">
+                                    Grade Gym
+                                    <div class="absolute right-3 bottom-3">
+                                        <span class="material-icons text-red-500">local_fire_department</span>
+                                    </div>
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Somewhere, California
+                                </p>
+
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">$$</span>
+                                </div>
+                        </div>
+                    </div>
+
+                      <!-- card four -->
+                      <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="./src/assets/images/20210221-KXCoffeeGym29.jpg" alt="" srcset="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <!-- stars -->
+                            <div class="flex items-center text-sm">
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-60">294 reviews</span>
+                            </div>
+                                <p class="text-lg font-bold text-gray-600">
+                                    Mulu Burger House
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Somewhere, California
+                                </p>
+
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">$$</span>
+                                </div>
+                        </div>
+                    </div>
+
+                      <!-- card five -->
+                      <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="./src/assets/images/dental 1.jpg" alt="" srcset="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <!-- stars -->
+                            <div class="flex items-center text-sm">
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-60">294 reviews</span>
+                            </div>
+                                <p class="text-lg font-bold text-gray-600">
+                                    Bete Fashion & Beauty
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Somewhere, California
+                                </p>
+
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">$$</span>
+                                </div>
+                        </div>
+                    </div>
+
+                      <!-- card six -->
+                      <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="./src/assets/images/skynews-dentist-generic_5393494.jpg" alt="" srcset="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <!-- stars -->
+                            <div class="flex items-center text-sm">
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-60">294 reviews</span>
+                            </div>
+                                <p class="text-lg font-bold text-gray-600">
+                                    Our Fruit Clinic
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Somewhere, California
+                                </p>
+
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">$$</span>
+                                </div>
+                        </div>
+                    </div>
+
+                      <!-- card seven -->
+                      <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="./src/assets/images/skynews-dentist-generic_5393494.jpg" alt="" srcset="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <!-- stars -->
+                            <div class="flex items-center text-sm">
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-60">294 reviews</span>
+                            </div>
+                                <p class="text-lg font-bold text-gray-600">
+                                    The Best Louche
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Somewhere, California
+                                </p>
+
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">$$</span>
+                                </div>
+                        </div>
+                    </div>
+
+                      <!-- card eight -->
+                      <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="./src/assets/images/skynews-dentist-generic_5393494.jpg" alt="" srcset="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <!-- stars -->
+                            <div class="flex items-center text-sm">
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-60">294 reviews</span>
+                            </div>
+                                <p class="text-lg font-bold text-gray-600">
+                                    Indian Traditional Food 
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Somewhere, California
+                                </p>
+
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">$$</span>
+                                </div>
+                        </div>
+                    </div>
+
+                      <!-- card nine -->
+                      <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="./src/assets/images/skynews-dentist-generic_5393494.jpg" alt="" srcset="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <!-- stars -->
+                            <div class="flex items-center text-sm">
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">grade</span>
+                                <span class="material-icons text text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-60">294 reviews</span>
+                            </div>
+                                <p class="text-lg font-bold text-gray-600">
+                                    Couples Dinner
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Somewhere, California
+                                </p>
+
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">$$</span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <button class="rounded-md py-2.5 px-6 bg-white border border-gray-100 text-lg shadow hover:shadow-lg text-gray-600">
+                        Discover More
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Discover by Categories -->
+    <div class="bg-sky-50 py-32">
+        <div class="w-8/12 mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-4xl font-bold text-gray-600 mb-3">Discover by Categories</p>
+                <p class="text-gray-600">Discover places by Categories</p>
+            </div>
+
+            <div>
+                <div class="grid grid-cols-4 gap-10">
+                    <a href="#" class="p-4 bg-white w-60 shadow hover:shadow space-y-5" >
+                        <img class="w-32 h-32 mx-auto rounded-full" src="./src/assets/images/icons/566024_coffee_cafe_cup_drink_espresso_icon.png" alt="" srcset="">
+                        <div class="space-y-2 text-center">
+                            <p class="text-gray-700 text-lg font-semibold mb-3">Coffee & Tea</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="p-4 bg-white w-60 shadow hover:shadow space-y-5" >
+                        <img class="w-32 h-32 mx-auto rounded-full" src="./src/assets/images/icons/531911_camera_device_entertainment_film_media_icon.png" alt="" srcset="">
+                        <div class="space-y-2 text-center">
+                            <p class="text-gray-700 text-lg font-semibold mb-3">Entertainment</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="p-4 bg-white w-60 shadow hover:shadow space-y-5" >
+                        <img class="w-32 h-32 mx-auto rounded-full" src="./src/assets/images/icons/hotel.png" alt="" srcset="">
+                        <div class="space-y-2 text-center">
+                            <p class="text-gray-700 text-lg font-semibold mb-3">Hotels & Travel</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="p-4 bg-white w-60 shadow hover:shadow space-y-5" >
+                        <img class="w-32 h-32 mx-auto rounded-full" src="./src/assets/images/icons/health.png" alt="" srcset="">
+                        <div class="space-y-2 text-center">
+                            <p class="text-gray-700 text-lg font-semibold mb-3">Health & Medical</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="p-4 bg-white w-60 shadow hover:shadow space-y-5" >
+                        <img class="w-32 h-32 mx-auto rounded-full" src="./src/assets/images/icons/school.png" alt="" srcset="">
+                        <div class="space-y-2 text-center">
+                            <p class="text-gray-700 text-lg font-semibold mb-3">Education</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="p-4 bg-white w-60 shadow hover:shadow space-y-5" >
+                        <img class="w-32 h-32 mx-auto rounded-full" src="./src/assets/images/icons/automotive.png" alt="" srcset="">
+                        <div class="space-y-2 text-center">
+                            <p class="text-gray-700 text-lg font-semibold mb-3">Automotive</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="p-4 bg-white w-60 shadow hover:shadow space-y-5" >
+                        <img class="w-32 h-32 mx-auto rounded-full" src="./src/assets/images/icons/home.png" alt="" srcset="">
+                        <div class="space-y-2 text-center">
+                            <p class="text-gray-700 text-lg font-semibold mb-3">Home Service</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="p-4 bg-white w-60 shadow hover:shadow space-y-5" >
+                        <img class="w-32 h-32 mx-auto rounded-full" src="./src/assets/images/icons/shopping.png" alt="" srcset="">
+                        <div class="space-y-2 text-center">
+                            <p class="text-gray-700 text-lg font-semibold mb-3">Shopping</p>
+                        </div>
+                    </a>                
+
+                </div>
+
+                <div class="mt-12 text-center">
+                    <button class="rounded-md py-2.5 px-6 bg-white border border-gray-100 text-lg shadow hover:shadow-lg text-gray-600">
+                        Discover More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collection -->
+    <div class="bg-slate-100 py-32">
+       <div class="w-8/12 mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-4xl font-bold text-gray-600 mb-3">Collections</p>
+                <p class="text-gray-600">Discover List of Top Places By Collection</p>
+            </div>
+            <div>
+                <div class="grid grid-cols-4 gap-10">
+                    <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="./src/assets/images/dental 1.jpg" alt="" class="rounded w-full h-full object-cover shadow">
+                        <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                        <div class="absolute bottom-2 left-3">
+                            <p class="text-white text-lg font-semibold">Newly Opened</p>
+                            <p class="text-white text-sm">21 Places</p>
+                        </div>
+                    </div>
+
+                    <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="./src/assets/images/dental 1.jpg" alt="" class="rounded w-full h-full object-cover shadow">
+                        <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                        <div class="absolute bottom-2 left-3">
+                            <p class="text-white text-lg font-semibold">Traditional Restaurant</p>
+                            <p class="text-white text-sm">21 Places</p>
+                        </div>
+                    </div>
+
+                    <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="./src/assets/images/dental 1.jpg" alt="" class="rounded w-full h-full object-cover shadow">
+                        <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                        <div class="absolute bottom-2 left-3">
+                            <p class="text-white text-lg font-semibold">Trending This Week</p>
+                            <p class="text-white text-sm">21 Places</p>
+                        </div>
+                    </div>
+
+                    <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="./src/assets/images/dental 1.jpg" alt="" class="rounded w-full h-full object-cover shadow">
+                        <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                        <div class="absolute bottom-2 left-3">
+                            <p class="text-white text-lg font-semibold">Luxury Houses</p>
+                            <p class="text-white text-sm">21 Places</p>
+                        </div>
+                    </div>
+
+                    <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="./src/assets/images/dental 1.jpg" alt="" class="rounded w-full h-full object-cover shadow">
+                        <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                        <div class="absolute bottom-2 left-3">
+                            <p class="text-white text-lg font-semibold">Cheap In Town</p>
+                            <p class="text-white text-sm">21 Places</p>
+                        </div>
+                    </div>
+
+                    <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="./src/assets/images/dental 1.jpg" alt="" class="rounded w-full h-full object-cover shadow">
+                        <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                        <div class="absolute bottom-2 left-3">
+                            <p class="text-white text-lg font-semibold">Newly Opened</p>
+                            <p class="text-white text-sm">21 Places</p>
+                        </div>
+                    </div>
+
+                    <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="./src/assets/images/dental 1.jpg" alt="" class="rounded w-full h-full object-cover shadow">
+                        <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                        <div class="absolute bottom-2 left-3">
+                            <p class="text-white text-lg font-semibold">Newly Opened</p>
+                            <p class="text-white text-sm">21 Places</p>
+                        </div>
+                    </div>
+
+                    <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="./src/assets/images/dental 1.jpg" alt="" class="rounded w-full h-full object-cover shadow">
+                        <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                        <div class="absolute bottom-2 left-3">
+                            <p class="text-white text-lg font-semibold">Newly Opened</p>
+                            <p class="text-white text-sm">21 Places</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+       <div class="mt-12 text-center">
+        <button class="rounded-md py-2.5 px-6 bg-white border border-gray-100 text-lg shadow hover:shadow-lg text-gray-600">
+            More Collections
+        </button>
+    </div>
+    </div>
+</div>
+
+
+</body>
+</html>
