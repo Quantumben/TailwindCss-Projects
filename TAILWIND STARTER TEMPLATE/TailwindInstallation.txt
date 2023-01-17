@@ -1,0 +1,16 @@
+1. npm init -y 
+Used to create a package.json file that contain info about the folder
+
+2. npm i -D tailwindcss
+Install tailwindcss using node package manager
+
+3. npx tailwind init
+Used to create tailwind config
+
+4. Then follow other steps in the documentation
+
+This two line helps to auto run our scripts
+"build": "tailwindcss -i ./input.css -o ./css/style.css",
+"watch": "tailwindcss -i ./input.css -o ./css/style.css --watch"
+
+5. run " npm run watch " to always compile the written code
